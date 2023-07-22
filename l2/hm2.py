@@ -8,4 +8,4 @@ left, d = divmod(x, 10)
 print(a)
 print(b)
 print(c)
-print(d
+print(d)
