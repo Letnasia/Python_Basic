@@ -16,4 +16,3 @@ for el in lst:
         result.append(el)
 print(result)
 
-
