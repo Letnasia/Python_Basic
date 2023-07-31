@@ -15,4 +15,3 @@ for el in lst:
     if el == 0:
         result.append(el)
 print(result)
-
