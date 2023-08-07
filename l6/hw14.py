@@ -1,6 +1,7 @@
 # 1000 -> 0
 # 423 -> 8
 # 1 -> 1
+# 999 -> 2
 
 dig = int(input('Enter integer number: '))
 
