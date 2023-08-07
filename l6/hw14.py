@@ -3,7 +3,7 @@
 # 1 -> 1
 # 999 -> 2
 
-dig = int(input('Enter integer number: '))
+dig = int(input('Enter an integer: '))
 
 while dig > 10:
     dig_str = str(dig)
