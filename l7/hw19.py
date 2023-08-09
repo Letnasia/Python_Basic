@@ -1,6 +1,3 @@
-import random
-
-
 def common_elements(count):
     first_list = []
     for i in range(0, count, 3):
