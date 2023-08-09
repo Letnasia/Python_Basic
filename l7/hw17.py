@@ -1,15 +1,3 @@
-# На вхід функції correct_sentence передається однє речення.
-# Необхідно повернути його виправлену копію так, щоб воно завжди починалося з великої літери та закінчувалося крапкою.
-#
-# Зверніть увагу, що не всі виправлення необхідні. Якщо речення вже закінчується крапкою, додавати ще одну не потрібно,
-# це буде помилкою
-#
-# Вхідні аргументи: string.
-#
-# Вихідні аргументи: string.
-#
-# Замість pass необхідно написати Ваше рішення.
-
 def correct_sentence(text):
     if not len(text):
         return '.'
@@ -18,6 +6,7 @@ def correct_sentence(text):
     if text[-1] != '.':
         return text + '.'
     return text
+
 
 assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 assert correct_sentence("hello") == "Hello.", 'Test2'
