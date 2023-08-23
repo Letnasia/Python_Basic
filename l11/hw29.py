@@ -1,6 +1,8 @@
 def generate_cube_numbers(end):
-    for i in range(2, end):
+    i = 2
+    while True:
         cube = i ** 3
+        i += 1
         if cube <= end:
             yield cube
         else:
