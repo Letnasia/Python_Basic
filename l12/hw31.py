@@ -12,7 +12,6 @@ while True:
 strings_html = html.split('\n')
 split_empty_str = [el for el in strings_html if not el.strip() == '']
 html = '\n'.join(split_empty_str)
-print(html)
 cleaned_file.write(html)
 original_file.close()
 cleaned_file.close()
