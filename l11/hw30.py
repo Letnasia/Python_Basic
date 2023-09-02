@@ -15,6 +15,7 @@ EVEN_DIGIT = {
 def is_even(number):
     number = str(number)
     return EVEN_DIGIT[number[-1]]
+    # return number[-1] in '02468'
 
 
 assert is_even(2494563894038**2) == True, 'Test1'
