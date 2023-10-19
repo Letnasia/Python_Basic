@@ -1,6 +1,6 @@
 def first_word(text):
-    text = text.replace('.', ' ').replace(',', ' ')
-    return text.split()[0]
+    text = text.replace('.', ' ').replace(',', ' ').split()
+    return text[0]
 
 
 assert first_word("Hello world") == "Hello", 'Test1'

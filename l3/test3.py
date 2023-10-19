@@ -1,21 +1,28 @@
-class Qux(Exception):
-    pass
+class Cat:
+    def __init__(self, _name, age):
+        self.__name = _name
+        self.age = age
 
-def foo():
-    index = 2
-    my_list = [0, 3, 9]
-    dd = {}
+    name = property() # Создание свойства name без методов контроля
 
-    try:
-        print(my_list[index])
-        raise Qux()
-    except IndexError:
-        print("You input wrong index")
-    except Exception as e:
-        print('Óooooh')
+    @name.getter
+    def name(self):
+        print("call get name")
+        return self.__name
 
-try:
-    foo()
-except Exception as e:
-    print(f'found an error: {type(e)} {e}')
-print(AssertionError.mro())
+    @name.setter
+    def name(self, name_value):
+        print("call set name")
+        self.__name = name_value
+
+    @name.deleter
+    def name(self):
+        print("call remove name")
+        del self.__name
+
+iter
+
+cat = Cat('Barsik', 3)
+print(cat.name)
+cat.name =  "Devil"
+del cat.name
